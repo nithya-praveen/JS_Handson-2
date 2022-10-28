@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .qst
+        {
+            color: blue;
+        }
+        .ans
+        {
+            color: rgb(193, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <h1>Decision Making</h1>
+    <b class="qst">Q1.</b>
+        <b class="ans">
+            Calculator
+            Write a program to make a simple calculator using switch statement that takes operator and two 
+            numbers from user and print the result after operation.
+        </b> <br><br>
+    <b class="qst">A1.</b> const Calculator = (A, B, C) => <br>
+                            { <br>
+                                let result; <br>
+                            switch(A) <br>
+                            { <br>
+                                case '+' : result = B+C; <br>
+                                return result; <br>
+                                case '-' : result = B-C; <br>
+                                return result; <br>
+                                case '*' : result = B*C; <br>
+                                return result; <br>
+                                case '/' : result = B/C; <br>
+                                return result; <br>
+                                default: return "Invalid Operator"; <br>
+                            } <br>
+                            };  <br> <br>
+    <b class="qst">Q2.</b>
+    <b class="ans">
+        Check whether the condition is fulfilled or not?
+        Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not. 
+    </b> <br><br>
+    <b class="qst">A2.</b> const Check_divisibility = (N) => <br>
+                           { <br>
+                                if(N%6===0 && N%9===0) <br>
+                                return "Divisible by both"; <br>
+                                else <br>
+                                return "Not Divisible by both"; <br>
+                            }; <br><br>    
+    <b class="qst">Q3.</b>
+    <b class="ans">Eligible Voter.
+        You are given an integer A, denoting the age of a person, and your task is to determine whether he/she is 
+        eligible to vote or not. </b> <br> <br>
+    <b class="qst">A3.</b> const isEligible = (a) => <br>
+                            { <br>
+                                if(a>=18 && a<=120) <br>
+                                    return "Eligible for Voting"; <br>
+                                else <br>
+                                    return "Not Eligible for Voting"; <br>
+                            }; <br> <br>
+    <b class="qst">Q4.</b>
+    <b class="ans">Find Relation
+        PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values 
+        X and Y and asks you to find the relation between them.
+        The relationships between integers Xand Y are as follows:
+        <ul>
+            <li>If X < Y, it means that X is smaller than Y</li>
+            <li>If X > Y, it means that X is greater than Y</li>
+            <li>If X = Y, it means that X is equal to Y</li>
+        </ul> </b> 
+    <b class="qst">A4.</b> const findRelation = (x,y) => <br>
+                           { <br>
+                                if(x<y) <br> 
+                                { <br>
+                                    return   x + " is smaller than " + y; <br>
+                                } <br>
+                                else if(x > y) <br>
+                                { <br>
+                                    return  x + " is greater than " + y; <br>
+                                } <br>
+                                else <br>
+                                { <br>
+                                    return   x + " is equal to " + y; <br>
+                                } <br>
+                            };  <br><br>
+    <b class="qst">Q5.</b> 
+    <b class="ans"> Find Grades
+    Your school has the following grading system based upon the marks(M) obtained by a student:                   
+    <ul>
+        <li>If M<=10 the grade will be E</li>
+        <li>If M<=20 and M>=11 the grade will be D</li>
+        <li>If M<=30 and M>=21 the grade will be C</li>
+        <li>If M<=40 and M>=31 the grade will be B</li>
+        <li>If M<=50 and M>=41 the grade will be A</li>
+    </ul></b>
+    <b class="qst">A5.</b> const findGrades = (a) => <br>
+    { <br>
+        switch(true) <br>
+        { <br>
+          case (a<=10) : return 'E'; <br>
+          case (a<=20 && a>=11) : return 'D'; <br>
+          case (a<=30 && a>=21) : return 'C'; <br>
+          case (a<=40 && a>=31) : return 'B'; <br>
+          case (a<=50 && a>=41) : return 'A'; <br>
+        } <br>
+    };<br> <br>
+    <b class="qst">Q6.</b> 
+    <b class="ans"> Get Value.
+        You are provided with a table containing some characters and their corresponding 
+        values. Your task will be to find the value from the table corresponding to an
+        input character and return it. 
+        | P or p 	- PrepBytes         | <br>
+        | Z or z 	- Zenith            | <br>
+        | E or e 	- Expert Coder   	| <br>
+        | D or d 	- Data Structure 	| </b> <br> <br>
+    <b class="qst">A6.</b> const getValue = (a) => <br>
+    { <br>
+        switch(a) <br>
+            { <br>
+              case "P" : <br>
+             return "PrepBytes"; <br>
+             case "p": <br>
+             return "PrepBytes"; <br>
+              case "Z": <br>
+              return "Zenith"; <br>
+              case "z": <br>
+             return "Zenith"; <br>
+               case "E" : <br>
+             return "Expert Coder"; <br>
+             case "e" : <br>
+            return "Expert Coder"; <br>
+             case "D": <br> 
+           return "Data Structure"; <br>
+           case "d" : <br>
+           return "Data Structure"; <br>
+           default: <br>
+           return "invalid"; <br>
+            } <br>
+        }; <br> <br>
+    <b class="qst">Q7.</b> 
+    <b class="ans"> Find the maximum out of three numbers.
+    Take three numbers and print the largest number among them if all of three are 
+    same print -1.</b> <br> <br>
+    <b class="qst">A7.</b> const Max_out_of_three = (A,B,C) => <br>
+    {    <br>
+        if(A>B && A>C) <br>
+              { <br>
+                return A; <br>
+              } <br>
+               else if(B>A && B>C) <br>
+              { <br>
+                return B; <br>
+              } <br>
+              else if (C>A && C>B)  <br>
+              { <br
+                return C; <<br>
+              } <br>
+              else <br>
+              { <br>
+              return "-1"; <br> 
+             } <br>
+        }; <br> <br>
+    <b class="qst">Q8.</b>  
+    <b class="ans"> Second Smallest
+    You are given 3 distinct integers X,Y and Z and your task is to find and return 
+    the second smallest integer among the three provided integers. </b> <br><br>
+    <b class="qst">A8.</b> const findSndSmallest = (x,y,z) => <br>
+    { <br>
+        if(x>y && x>z) <br>
+                 { <br>
+                   if(y<z) <br>  
+                   { <br>
+                     return y; <br>
+                   } <br>
+                   else <br>
+                   { <br>
+                     return z; <br>
+                   } <br>
+                 } <br>
+                 else if(y>x && y>z) <br>
+             { <br>
+             if(x>z) <br>
+             { <br>
+             return x; <br>
+             } <br>
+             else <br>
+             { <br>
+             return z; <br>
+             } <br>
+             } <br>
+             else if(z>x && z>y) <br>
+             { <br>
+             if(x>y) <br>
+             { <br>
+             return x; <br>
+             } <br>
+             else <br>
+             { <br>
+             return y; <br>
+             } <br>
+             } <br>
+       }; <br> <br>
+    <b class="qst">Q9.</b>      
+    <b class="ans"> Check whether the triangle is Acute or Obtuse
+        Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</b> <br><br>
+    <b class="qst">A9.</b> const Triangle_Check = (A,B,C) => <br>
+     { <br>
+        if(A<90 && B<90 && C<90) <br>
+               { <br>
+               return "acute"; <br>
+               } <br>
+               else if(A<180 || B<180 || C<180) <br>
+               { <br>
+               return "obtuse"; <br>
+               } <br>
+    }; <br> 
+        
+      
+</body>
+</html>
